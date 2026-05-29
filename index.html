@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neil — Designer, Animator & Visual Storyteller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@100;200;300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body class="page-home" data-page="home">
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  CINEMATIC LOADING SCREEN                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">N</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+      <div class="loader-count">
+        <span id="loader-num">0</span>
+      </div>
+    </div>
+    <div class="loader-overlay-top"></div>
+    <div class="loader-overlay-bottom"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  CUSTOM CURSOR                             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  GRAIN TEXTURE OVERLAY                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="grain-overlay"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  AMBIENT BACKGROUND                        -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="ambient-bg">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  NAVIGATION                                -->
+  <!-- ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <a href="index.html" class="logo-link magnetic">
+        <span class="logo-letter">N</span>
+        <span class="logo-dot">.</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active magnetic" data-text="Home">Home</a>
+      <a href="about.html" class="nav-link magnetic" data-text="About">About</a>
+      <a href="portfolio.html" class="nav-link magnetic" data-text="Work">Work</a>
+      <a href="contact.html" class="nav-link magnetic" data-text="Contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn-nav magnetic">Let's Talk</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="portfolio.html" class="mobile-nav-link">Work</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+    <div class="mobile-social">
+      <a href="https://www.behance.net/neilmusical" class="m-soc">Behance</a>
+      <a href="https://www.youtube.com/@Neil_armstrongxtudios" class="m-soc">Youtube</a>
+      <a href="https://www.instagram.com/neilhalyou/" class="m-soc">Instagram</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  HERO SECTION                              -->
+  <!-- ═══════════════════════════════════════════ -->
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+
+        <!-- Left Column: Typography -->
+        <div class="hero-content">
+          <div class="hero-tag reveal-up">
+            <span class="tag-dot"></span>
+            <span>Available for projects — 2025</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line">
+              <span class="title-word reveal-char" data-delay="0">I</span>
+              <span class="title-word reveal-char" data-delay="0.05">DESIGN</span>
+            </span>
+            <span class="title-line">
+              <span class="title-word reveal-char italic-word" data-delay="0.1">EXPERIENCES</span>
+            </span>
+            <span class="title-line">
+              <span class="title-word reveal-char" data-delay="0.15">THAT</span>
+              <span class="title-word reveal-char" data-delay="0.2">STAY.</span>
+            </span>
+          </h1>
+
+          <p class="hero-sub reveal-up" data-delay="0.6">
+            Designer, Animator & Visual Storyteller
+          </p>
+
+          <div class="hero-cta reveal-up" data-delay="0.8">
+            <a href="portfolio.html" class="btn-primary magnetic">
+              <span class="btn-text">Explore My Work</span>
+              <span class="btn-icon">↗</span>
+            </a>
+            <a href="about.html" class="btn-ghost magnetic">
+              <span class="btn-text">This Is Neil</span>
+            </a>
+          </div>
+
+          <div class="hero-scroll reveal-up" data-delay="1">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual -->
+        <div class="hero-visual">
+          <div class="hero-frame reveal-scale">
+            <div class="frame-inner">
+              <img
+                src="https://images.pexels.com/photos/28588326/pexels-photo-28588326.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800"
+                alt="Neil — Visual Designer"
+                class="hero-img parallax-img"
+              />
+              <div class="frame-overlay"></div>
+              <div class="frame-badge">
+                <span class="badge-num">07</span>
+                <span class="badge-label">Years of<br/>Excellence</span>
+              </div>
+            </div>
+            <div class="frame-deco deco-1"></div>
+            <div class="frame-deco deco-2"></div>
+          </div>
+
+          <!-- Floating info pills -->
+          <div class="info-pill pill-1 float-anim">
+            <span class="pill-num">120+</span>
+            <span class="pill-txt">Projects Delivered</span>
+          </div>
+          <div class="info-pill pill-2 float-anim" style="animation-delay:1.2s">
+            <span class="pill-num">40+</span>
+            <span class="pill-txt">Awards Won</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vertical Social Links -->
+      <div class="social-rail reveal-fade" data-delay="1.2">
+        <div class="social-label">Follow</div>
+        <div class="social-links">
+          <a href="#" class="soc-link magnetic" data-text="Be">Be</a>
+          <a href="#" class="soc-link magnetic" data-text="Dr">Dr</a>
+          <a href="#" class="soc-link magnetic" data-text="Ig">Ig</a>
+          <a href="#" class="soc-link magnetic" data-text="Li">Li</a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="hero-index">
+        <span>01 / 04</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  MARQUEE SECTION                           -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>Branding</span><span class="sep">✦</span>
+          <span>Motion Design</span><span class="sep">✦</span>
+          <span>UI/UX</span><span class="sep">✦</span>
+          <span>Animation</span><span class="sep">✦</span>
+          <span>Visual Direction</span><span class="sep">✦</span>
+          <span>Art Direction</span><span class="sep">✦</span>
+          <span>Branding</span><span class="sep">✦</span>
+          <span>Motion Design</span><span class="sep">✦</span>
+          <span>UI/UX</span><span class="sep">✦</span>
+          <span>Animation</span><span class="sep">✦</span>
+          <span>Visual Direction</span><span class="sep">✦</span>
+          <span>Art Direction</span><span class="sep">✦</span>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  STATEMENT SECTION                         -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="statement-section">
+      <div class="statement-inner">
+        <p class="statement-text reveal-chars">
+          Design isn't decoration.<br/>
+          <em>It's the language of intent.</em>
+        </p>
+        <div class="statement-sub reveal-up">
+          Neil crafts digital experiences that fuse emotion,<br/>
+          precision, and visual poetry into a single cohesive narrative.
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  SERVICES SECTION                          -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="services-section" id="services">
+      <div class="services-header reveal-up">
+        <div class="sec-tag">What I Do</div>
+      </div>
+      <div class="services-list">
+        <div class="service-item reveal-up" data-delay="0.05">
+          <div class="service-num">01</div>
+          <div class="service-content">
+            <h3 class="service-title">Brand Identity</h3>
+            <p class="service-desc">Visual systems that build empires. Logo, typography, color — crafted with intention.</p>
+          </div>
+          <div class="service-arrow">↗</div>
+        </div>
+        <div class="service-item reveal-up" data-delay="0.1">
+          <div class="service-num">02</div>
+          <div class="service-content">
+            <h3 class="service-title">Motion Design</h3>
+            <p class="service-desc">Animation that breathes life into brands. Slow, elegant, cinematic movement.</p>
+          </div>
+          <div class="service-arrow">↗</div>
+        </div>
+        <div class="service-item reveal-up" data-delay="0.15">
+          <div class="service-num">03</div>
+          <div class="service-content">
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-desc">Digital products that feel inevitable. Clean interfaces with invisible complexity.</p>
+          </div>
+          <div class="service-arrow">↗</div>
+        </div>
+        <div class="service-item reveal-up" data-delay="0.2">
+          <div class="service-num">04</div>
+          <div class="service-content">
+            <h3 class="service-title">Visual Direction</h3>
+            <p class="service-desc">The full vision — art direction, creative strategy, and visual storytelling at scale.</p>
+          </div>
+          <div class="service-arrow">↗</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  CTA SECTION                               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <div class="cta-tag reveal-up">Start a Project</div>
+        <h2 class="cta-title reveal-up">
+          Ready to create<br/><em>something unforgettable?</em>
+        </h2>
+        <a href="contact.html" class="cta-btn magnetic reveal-up">
+          <span>Let's Talk</span>
+          <span class="btn-circle">↗</span>
+        </a>
+      </div>
+      <div class="cta-bg-text" aria-hidden="true">NEIL</div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  FOOTER                                    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">N<span class="dot">.</span></div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.behance.net/neilmusical" class="magnetic">Behance</a>
+        <a href="https://www.youtube.com/@Neil_armstrongxtudios" class="magnetic">Youtube</a>
+        <a href="https://www.instagram.com/neilhalyou/" class="magnetic">Instagram</a>
+        <a href="#" class="magnetic">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Neil. All rights reserved.</span>
+      <span>Designed with obsession.</span>
+    </div>
+  </footer>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition" id="pageTransition">
+    <div class="pt-fill"></div>
+  </div>
+
+  <script src="js/cursor.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* ═══════════════════════════════════════════════════════
+   NEIL — CINEMATIC PORTFOLIO
+   animations.css — Reveal & Motion Animations
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Reveal Base States ── */
+.reveal-up,
+.reveal-fade,
+.reveal-scale,
+.reveal-chars,
+.reveal-char {
+  opacity: 0;
+}
+
+.reveal-up {
+  transform: translateY(50px);
+}
+
+.reveal-scale {
+  transform: scale(0.92);
+}
+
+/* ── Revealed State ── */
+.revealed {
+  opacity: 1 !important;
+  transform: none !important;
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Stagger Delays ── */
+.reveal-up[data-delay="0.05"]  { transition-delay: 0.05s; }
+.reveal-up[data-delay="0.1"]   { transition-delay: 0.1s; }
+.reveal-up[data-delay="0.15"]  { transition-delay: 0.15s; }
+.reveal-up[data-delay="0.2"]   { transition-delay: 0.2s; }
+.reveal-up[data-delay="0.25"]  { transition-delay: 0.25s; }
+.reveal-up[data-delay="0.3"]   { transition-delay: 0.3s; }
+.reveal-up[data-delay="0.4"]   { transition-delay: 0.4s; }
+.reveal-up[data-delay="0.5"]   { transition-delay: 0.5s; }
+.reveal-up[data-delay="0.6"]   { transition-delay: 0.6s; }
+.reveal-up[data-delay="0.8"]   { transition-delay: 0.8s; }
+.reveal-up[data-delay="1"]     { transition-delay: 1s; }
+.reveal-up[data-delay="1.2"]   { transition-delay: 1.2s; }
+
+.reveal-scale[data-delay="0.1"]  { transition-delay: 0.1s; }
+.reveal-scale[data-delay="0.2"]  { transition-delay: 0.2s; }
+.reveal-scale[data-delay="0.3"]  { transition-delay: 0.3s; }
+
+.reveal-fade[data-delay="1"]   { transition-delay: 1s; }
+.reveal-fade[data-delay="1.2"] { transition-delay: 1.2s; }
+
+/* ── Hero Title Word Animation ── */
+.reveal-char {
+  display: inline-block;
+  transform: translateY(100%) rotate(4deg);
+  transform-origin: bottom left;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-char.revealed {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);
+}
+
+.reveal-char[data-delay="0"]    { transition-delay: 0s; }
+.reveal-char[data-delay="0.05"] { transition-delay: 0.05s; }
+.reveal-char[data-delay="0.1"]  { transition-delay: 0.1s; }
+.reveal-char[data-delay="0.15"] { transition-delay: 0.15s; }
+.reveal-char[data-delay="0.2"]  { transition-delay: 0.2s; }
+
+/* ── Letter-by-letter animation for statement ── */
+.reveal-chars .char-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-chars.revealed .char-letter {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Parallax Images ── */
+.parallax-img {
+  will-change: transform;
+}
+
+/* ── Page Enter Animation ── */
+.page-enter {
+  animation: pageEnter 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Skill Bar Animation ── */
+.skill-fill {
+  height: 100%;
+  width: 0 !important;
+  background: linear-gradient(90deg, var(--gray-700), var(--white));
+  border-radius: 2px;
+  transition: width 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skill-fill.animated {
+  width: var(--target-width) !important;
+}
+
+/* ── Hover Glow Effect ── */
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-glow:hover::before {
+  opacity: 1;
+}
+
+/* ── Image Distortion on Hover ── */
+.bento-card .bento-img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.6s ease;
+  filter: grayscale(20%);
+  transform-origin: center;
+}
+
+.bento-card:hover .bento-img {
+  transform: scale(1.08);
+  filter: grayscale(0%);
+}
+
+/* ── Mouse Follow Light ── */
+.mouse-light {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.03) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+/* ── Text Shimmer ── */
+@keyframes textShimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    var(--gray-400) 25%,
+    var(--white) 50%,
+    var(--gray-400) 75%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: textShimmer 4s linear infinite;
+}
+
+/* ── Blur In Animation ── */
+@keyframes blurIn {
+  from {
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.blur-in {
+  animation: blurIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ── Number Counter ── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Slow Float ── */
+@keyframes slowFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33%       { transform: translateY(-16px) rotate(1deg); }
+  66%       { transform: translateY(8px) rotate(-1deg); }
+}
+
+.slow-float {
+  animation: slowFloat 10s ease-in-out infinite;
+}
+
+/* ── Gradient Sweep ── */
+@keyframes gradientSweep {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Border Glow ── */
+@keyframes borderGlow {
+  0%, 100% { box-shadow: 0 0 0 rgba(255, 255, 255, 0); }
+  50%       { box-shadow: 0 0 30px rgba(255, 255, 255, 0.08); }
+}
+
+/* ── Cursor Trail ── */
+.cursor-trail {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  z-index: 9996;
+  transform: translate(-50%, -50%);
+  animation: trailFade 0.6s ease forwards;
+}
+
+@keyframes trailFade {
+  from { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+  to   { opacity: 0; transform: translate(-50%, -50%) scale(0.2); }
+}

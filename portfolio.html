@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Neil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@100;200;300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body class="page-portfolio" data-page="portfolio">
+
+  <div id="loader" class="loader loader-fast">
+    <div class="loader-inner">
+      <div class="loader-logo">N</div>
+    </div>
+    <div class="loader-overlay-top"></div>
+    <div class="loader-overlay-bottom"></div>
+  </div>
+
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+  <div class="grain-overlay"></div>
+
+  <div class="ambient-bg">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <a href="index.html" class="logo-link magnetic">
+        <span class="logo-letter">N</span>
+        <span class="logo-dot">.</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link magnetic" data-text="Home">Home</a>
+      <a href="about.html" class="nav-link magnetic" data-text="About">About</a>
+      <a href="portfolio.html" class="nav-link active magnetic" data-text="Work">Work</a>
+      <a href="contact.html" class="nav-link magnetic" data-text="Contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn-nav magnetic">Let's Talk</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="portfolio.html" class="mobile-nav-link">Work</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Project Modal -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close magnetic" id="modalClose">
+        <span>✕</span>
+      </button>
+      <div class="modal-inner">
+        <div class="modal-media">
+          <img src="" alt="" class="modal-img" id="modalImg" />
+          <div class="modal-img-overlay"></div>
+        </div>
+        <div class="modal-info">
+          <div class="modal-cat" id="modalCat"></div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-meta">
+            <div class="modal-meta-item">
+              <span class="meta-label">Year</span>
+              <span class="meta-val" id="modalYear"></span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="meta-label">Category</span>
+              <span class="meta-val" id="modalCatDetail"></span>
+            </div>
+            <div class="modal-meta-item">
+              <span class="meta-label">Client</span>
+              <span class="meta-val" id="modalClient"></span>
+            </div>
+          </div>
+          <a href="#"
+   target="_blank"
+   class="modal-cta magnetic">
+
+    <span>Watch On YouTube</span>
+    <span>↗</span>
+
+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+      <div class="port-hero-inner">
+        <div class="port-tag reveal-up">
+          <span class="tag-dot"></span>
+          <span>Selected Projects</span>
+        </div>
+        <h1 class="port-title reveal-up">
+          The<br/><em>Work.</em>
+        </h1>
+        <p class="port-sub reveal-up">120+ projects. Every single one delivered with obsession.</p>
+      </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-section">
+      <div class="filter-bar reveal-up">
+        <button class="filter-btn active magnetic" data-filter="all">All</button>
+        <button class="filter-btn magnetic" data-filter="branding">Branding</button>
+        <button class="filter-btn magnetic" data-filter="motion">Motion Design</button>
+        <button class="filter-btn magnetic" data-filter="uiux">UI/UX</button>
+        <button class="filter-btn magnetic" data-filter="animation">Animation</button>
+        <button class="filter-btn magnetic" data-filter="direction">Visual Direction</button>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  BENTO GRID                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="bento-section">
+      <div class="bento-grid" id="bentoGrid">
+
+        <!-- Project 01 -->
+        <article class="bento-card bento-wide reveal-up"
+          data-filter="Animation"
+          data-title="Night Memory"
+          data-cat="Animation"
+          data-desc="A complete visual identity system for Luminary — a premium luxury wellness brand. The project encompassed logo design, typography system, color theory, and comprehensive brand guidelines delivered across print and digital."
+          data-year="2024"
+          data-client="Luminary Wellness Co."
+          data-img="images/night drive.png"
+          data-video="https://www.youtube.com/watch?v=mtu289s9yS0"
+        >
+          <div class="bento-media">
+            <img src="images/night drive.png" class="bento-img" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">Animation</span>
+                <h3 class="hover-title">Night Memory</h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">01</span>
+            <span class="b-title">Night Memory</span>
+            <span class="b-cat">Animation</span>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="bento-card bento-square reveal-up" data-delay="0.1"
+          data-filter="Sketch"
+          data-title="The Unseen Frame"
+          data-cat="Sketch"
+          data-desc="An experimental motion design reel showcasing the full range of kinetic typography, particle systems, and fluid dynamics animation. Created entirely in After Effects with Cinema 4D renders."
+          data-year="2024"
+          data-client="Personal Project"
+          data-img="images/girl sketch.png"
+        >
+          <div class="bento-media">
+            <img src="images/girl sketch.png" class="bento-img" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">Sketch</span>
+                <h3 class="hover-title">The Unseen Frame</h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">02</span>
+            <span class="b-title">The Unseen Frame</span>
+            <span class="b-cat">sketch</span>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="bento-card bento-square reveal-up" data-delay="0.15"
+          data-filter="Graphics"
+          data-title="Velvet Nights"
+          data-cat="Graphics"
+          data-desc="A comprehensive dark-mode design system built for modern SaaS products. Features 300+ components, interaction patterns, and accessibility standards. Documented with Figma's component variants and auto-layout."
+          data-year="2023"
+          data-client="Void Technologies"
+          data-img="images/Event posts insta.jpg"
+        >
+          <div class="bento-media">
+            <img src="images/Event posts insta.jpg" class="bento-img" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">Graphics</span>
+                <h3 class="hover-title">Velvet Nights</h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">03</span>
+            <span class="b-title">Velvet Nights</span>
+            <span class="b-cat">Grphics</span>
+          </div>
+        </article>
+
+        <!-- Project 04 -->
+        <article class="bento-card bento-tall reveal-up" data-delay="0.2"
+          data-filter="direction"
+          data-title="Orbit Of dreams"
+          data-cat="Visual Direction"
+          data-desc="Complete visual direction for a high-fashion editorial campaign. Directed photography, post-production color grading, layout design, and final deliverables for both digital and print publications."
+          data-year="2024"
+          data-client="Noir Couture"
+          data-img="images/Moon.webp"
+          
+        >
+          <div class="bento-media">
+            <img src="images/Moon.webp" class="bento-img" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">Visual Direction</span>
+                <h3 class="hover-title">Orbit Of dreams</h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+              
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">04</span>
+            <span class="b-title">Orbit Of dreams</span>
+            <span class="b-cat">Visual Direction</span>
+           
+          </div>
+        </article>
+
+        <!-- Project 05 -->
+        <article class="bento-card bento-wide reveal-up" data-delay="0.1"
+          data-filter="animation"
+          data-title="The Static Motion"
+          data-cat="Animation"
+          data-desc="A three-part animation series exploring the boundaries between reality and abstraction. Produced using frame-by-frame 2D animation blended with 3D volumetric effects and custom particle simulations."
+          data-year="2023"
+          data-client="Phantom Studios"
+          data-img="images/The Fall.png"
+          data-video="https://www.youtube.com/watch?v=Z8PLF00xO4Y"
+        >
+          <div class="bento-media">
+            <img src="images/The Fall.png" class="bento-img" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">Animation</span>
+                <h3 class="hover-title">The Static Motion</h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">05</span>
+            <span class="b-title">The Static Motion</span>
+            <span class="b-cat">Animation</span>
+          </div>
+        </article>
+
+        <!-- Project 06 -->
+        <article class="bento-card bento-square reveal-up" data-delay="0.2"
+          data-filter="Sketch"
+          data-title="Radioactive Pulse"
+          data-cat="Sketch"
+          data-desc="Monochromatic brand identity for a premium architecture firm. The visual language draws from modernist architectural principles — clean geometry, negative space, and precise typographic hierarchy."
+          data-year="2023"
+          data-client="Eclipse Architecture"
+          data-img="images/spiderman.png"
+        >
+          <div class="bento-media">
+            <img src="images/spiderman.png" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">Sketch</span>
+                <h3 class="hover-title">Radioactive Pulse</h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">06</span>
+            <span class="b-title">Radioactive Pulse</span>
+            <span class="b-cat">Sketch</span>
+          </div>
+        </article>
+		   <!-- Project 07 -->
+        <article class="bento-card bento-square reveal-up" data-delay="0.1"
+          data-filter="Branding"
+          data-title="Musical Strings"
+          data-cat="Graphics"
+          data-desc="An experimental motion design reel showcasing the full range of kinetic typography, particle systems, and fluid dynamics animation. Created entirely in After Effects with Cinema 4D renders."
+          data-year="2024"
+          data-client="Personal Project"
+          data-img="images/mockup.jpg"
+        >
+          <div class="bento-media">
+            <img src="images/mockup.jpg" class="bento-img" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">Graphics</span>
+                <h3 class="hover-title">Musical Strings</h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">02</span>
+            <span class="b-title">Musical Strings</span>
+            <span class="b-cat">Graphics</span>
+          </div>
+        </article>
+		    <!-- Project 08 -->
+        <article class="bento-card bento-square reveal-up" data-delay="0.15"
+          data-filter="AI film"
+          data-title="Beyond Pluto"
+          data-cat="AI film"
+          data-desc="A comprehensive dark-mode design system built for modern SaaS products. Features 300+ components, interaction patterns, and accessibility standards. Documented with Figma's component variants and auto-layout."
+          data-year="2023"
+          data-client="Void Technologies"
+          data-img="images/pluto touchdown.png"
+        >
+          <div class="bento-media">
+            <img src="images/Pluto touchdown.png" class="bento-img" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">AI film</span>
+                <h3 class="hover-title">Beyond Pluto</h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">03</span>
+            <span class="b-title">Beyond Pluto</span>
+            <span class="b-cat">AI film</span>
+          </div>
+        </article>
+		   <!-- Project 09 -->
+        <article class="bento-card bento-wide reveal-up" data-delay="0.1"
+          data-filter="Graphics"
+          data-title="Sand Atlas"
+          data-cat="Graphics"
+          data-desc="A three-part animation series exploring the boundaries between reality and abstraction. Produced using frame-by-frame 2D animation blended with 3D volumetric effects and custom particle simulations."
+          data-year="2023"
+          data-client="Phantom Studios"
+          data-img="images/Music magazine.png"
+        >
+          <div class="bento-media">
+            <img src="images/Music magazine.png" class="bento-img" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">Graphics</span>
+                <h3 class="hover-title">Sand Atlas</h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">05</span>
+            <span class="b-title">Sand Atlas</span>
+            <span class="b-cat">Graphics</span>
+          </div>
+        </article>
+
+        <!-- Project 10 -->
+        <article class="bento-card bento-square reveal-up" data-delay="0.2"
+          data-filter="branding"
+          data-title="Christmas Eve"
+          data-cat="Branding"
+          data-desc="Monochromatic brand identity for a premium architecture firm. The visual language draws from modernist architectural principles — clean geometry, negative space, and precise typographic hierarchy."
+          data-year="2023"
+          data-client="Eclipse Architecture"
+          data-img="images/Christmas Posts Insta.jpg"
+        >
+          <div class="bento-media">
+            <img src="images/Christmas Posts Insta.jpg" />
+            <div class="bento-hover-overlay">
+              <div class="hover-content">
+                <span class="hover-cat">Branding</span>
+                <h3 class="hover-title">Christmas Eve/h3>
+                <span class="hover-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+          <div class="bento-label">
+            <span class="b-num">06</span>
+            <span class="b-title">Christmas Eve</span>
+            <span class="b-cat">Branding</span>
+          </div>
+        </article>
+		  
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <div class="cta-tag reveal-up">Start Your Project</div>
+        <h2 class="cta-title reveal-up">
+          Your vision deserves<br/><em>an exceptional designer.</em>
+        </h2>
+        <a href="contact.html" class="cta-btn magnetic reveal-up">
+          <span>Let's Create</span>
+          <span class="btn-circle">↗</span>
+        </a>
+      </div>
+      <div class="cta-bg-text" aria-hidden="true">WORK</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">N<span class="dot">.</span></div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.behance.net/neilmusical" class="magnetic">Behance</a>
+        <a href="https://www.youtube.com/@Neil_armstrongxtudios" class="magnetic">Youtube</a>
+        <a href="https://www.instagram.com/neilhalyou/" class="magnetic">Instagram</a>
+        <a href="#" class="magnetic">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Neil. All rights reserved.</span>
+      <span>Designed with obsession.</span>
+    </div>
+  </footer>
+
+  <div class="page-transition" id="pageTransition">
+    <div class="pt-fill"></div>
+  </div>
+
+  <script src="js/cursor.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

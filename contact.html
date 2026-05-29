@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Neil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@100;200;300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body class="page-contact" data-page="contact">
+
+  <div id="loader" class="loader loader-fast">
+    <div class="loader-inner">
+      <div class="loader-logo">N</div>
+    </div>
+    <div class="loader-overlay-top"></div>
+    <div class="loader-overlay-bottom"></div>
+  </div>
+
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+  <div class="grain-overlay"></div>
+
+  <div class="ambient-bg">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <a href="index.html" class="logo-link magnetic">
+        <span class="logo-letter">N</span>
+        <span class="logo-dot">.</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link magnetic" data-text="Home">Home</a>
+      <a href="about.html" class="nav-link magnetic" data-text="About">About</a>
+      <a href="portfolio.html" class="nav-link magnetic" data-text="Work">Work</a>
+      <a href="contact.html" class="nav-link active magnetic" data-text="Contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn-nav magnetic">Let's Talk</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="portfolio.html" class="mobile-nav-link">Work</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <!-- Success Toast -->
+  <div class="toast" id="toast">
+    <div class="toast-icon">✓</div>
+    <div class="toast-msg">Message sent. I'll be in touch soon.</div>
+  </div>
+
+  <main>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="contact-hero-inner">
+        <div class="contact-tag reveal-up">
+          <span class="tag-dot"></span>
+          <span>Get In Touch</span>
+        </div>
+        <h1 class="contact-title reveal-up">
+          LET'S CREATE<br/>
+          SOMETHING<br/>
+          <em>UNFORGETTABLE.</em>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="contact-main">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <div class="info-block reveal-up">
+            <div class="info-label">Say Hello</div>
+            <a href="mailto:neil@studio.com" class="info-email magnetic">
+              neil@studio.com
+            </a>
+          </div>
+
+          <div class="info-block reveal-up" data-delay="0.1">
+            <div class="info-label">Based In</div>
+            <div class="info-val">India</div>
+            <div class="info-sub">Available worldwide</div>
+          </div>
+
+          <div class="info-block reveal-up" data-delay="0.2">
+            <div class="info-label">Availability</div>
+            <div class="avail-badge">
+              <span class="avail-dot"></span>
+              <span>Open for projects — 2025</span>
+            </div>
+          </div>
+
+          <div class="info-socials reveal-up" data-delay="0.3">
+            <div class="info-label">Follow</div>
+            <div class="social-links-contact">
+              <a href="https://www.behance.net/neilmusical" class="soc-item magnetic">
+                <span class="soc-name">Behance</span>
+                <span class="soc-arr">↗</span>
+              </a>
+              <a href="https://www.youtube.com/@Neil_armstrongxtudios" class="soc-item magnetic">
+                <span class="soc-name">Youtube</span>
+                <span class="soc-arr">↗</span>
+              </a>
+              <a href="https://www.instagram.com/neilhalyou/" class="soc-item magnetic">
+                <span class="soc-name">Instagram</span>
+                <span class="soc-arr">↗</span>
+              </a>
+              <a href="#" class="soc-item magnetic">
+                <span class="soc-name">LinkedIn</span>
+                <span class="soc-arr">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap reveal-up" data-delay="0.2">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-field">
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                class="form-input"
+                required
+                placeholder=" "
+                autocomplete="off"
+              />
+              <label for="fname" class="form-label">Your Name</label>
+              <div class="field-line"></div>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="email"
+                id="femail"
+                name="femail"
+                class="form-input"
+                required
+                placeholder=" "
+                autocomplete="off"
+              />
+              <label for="femail" class="form-label">Email Address</label>
+              <div class="field-line"></div>
+            </div>
+
+            <div class="form-field">
+              <select id="fservice" name="fservice" class="form-input form-select" required>
+                <option value="" disabled selected></option>
+                <option value="branding">Brand Identity</option>
+                <option value="motion">Motion Design</option>
+                <option value="uiux">UI/UX Design</option>
+                <option value="animation">Animation</option>
+                <option value="direction">Visual Direction</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="fservice" class="form-label">Service Needed</label>
+              <div class="field-line"></div>
+            </div>
+
+            <div class="form-field form-field-full">
+              <textarea
+                id="fmessage"
+                name="fmessage"
+                class="form-input form-textarea"
+                required
+                placeholder=" "
+                rows="4"
+              ></textarea>
+              <label for="fmessage" class="form-label">Tell me about your project</label>
+              <div class="field-line"></div>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="submit-btn magnetic" id="submitBtn">
+                <span class="submit-text">Send Message</span>
+                <span class="submit-icon">↗</span>
+                <div class="submit-bg"></div>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Ambient Text Section -->
+    <section class="contact-ambient">
+      <div class="ambient-text-wrap">
+        <div class="ambient-huge reveal-up">Let's build.</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">N<span class="dot">.</span></div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="magnetic">Behance</a>
+        <a href="#" class="magnetic">Dribbble</a>
+        <a href="#" class="magnetic">Instagram</a>
+        <a href="#" class="magnetic">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Neil. All rights reserved.</span>
+      <span>Designed with obsession.</span>
+    </div>
+  </footer>
+
+  <div class="page-transition" id="pageTransition">
+    <div class="pt-fill"></div>
+  </div>
+
+  <script src="js/cursor.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

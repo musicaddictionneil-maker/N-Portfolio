@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Neil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@100;200;300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body class="page-about" data-page="about">
+
+  <div id="loader" class="loader loader-fast">
+    <div class="loader-inner">
+      <div class="loader-logo">N</div>
+    </div>
+    <div class="loader-overlay-top"></div>
+    <div class="loader-overlay-bottom"></div>
+  </div>
+
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+  <div class="grain-overlay"></div>
+
+  <div class="ambient-bg">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <a href="index.html" class="logo-link magnetic">
+        <span class="logo-letter">N</span>
+        <span class="logo-dot">.</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link magnetic" data-text="Home">Home</a>
+      <a href="about.html" class="nav-link active magnetic" data-text="About">About</a>
+      <a href="portfolio.html" class="nav-link magnetic" data-text="Work">Work</a>
+      <a href="contact.html" class="nav-link magnetic" data-text="Contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn-nav magnetic">Let's Talk</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="portfolio.html" class="mobile-nav-link">Work</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  ABOUT HERO                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="about-hero">
+      <div class="about-hero-inner">
+        <div class="about-tag reveal-up">
+          <span class="tag-dot"></span>
+          <span>About the creator</span>
+        </div>
+        <h1 class="about-hero-title reveal-up">
+          This<br/><em>Is Neil.</em>
+        </h1>
+        
+        <p class="about-hero-sub reveal-up">
+          Designer. Animator. Visual Storyteller.
+        </p>
+
+        <!-- Right column: Profile Info Panel -->
+        <div class="hero-info-panel reveal-up" data-delay="0.2">
+          <div class="hero-info-card">
+            <div class="hero-info-row">
+              <span class="hero-info-key">Based in</span>
+              <span class="hero-info-val">Mumbai, India</span>
+            </div>
+            <div class="hero-info-row">
+              <span class="hero-info-key">Available for</span>
+              <span class="hero-info-val">Freelance &amp; Collabs</span>
+            </div>
+            <div class="hero-info-row">
+              <span class="hero-info-key">Focus</span>
+              <span class="hero-info-val">Brand · Motion · UX</span>
+            </div>
+            <div class="hero-info-row">
+              <span class="hero-info-key">Languages</span>
+              <span class="hero-info-val">English · Hindi</span>
+            </div>
+          </div>
+
+          <div class="hero-marquee-wrap">
+            <div class="hero-marquee">
+              <span>Brand Identity</span>
+              <span class="marquee-dot">·</span>
+              <span>Motion Design</span>
+              <span class="marquee-dot">·</span>
+              <span>Visual Direction</span>
+              <span class="marquee-dot">·</span>
+              <span>UI/UX</span>
+              <span class="marquee-dot">·</span>
+              <span>3D & Spatial</span>
+              <span class="marquee-dot">·</span>
+              <span>Typography</span>
+              <span class="marquee-dot">·</span>
+              <span>Brand Identity</span>
+              <span class="marquee-dot">·</span>
+              <span>Motion Design</span>
+              <span class="marquee-dot">·</span>
+              <span>Visual Direction</span>
+              <span class="marquee-dot">·</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-mini">
+            <a href="portfolio.html" class="hero-cta-link">View Work <span>↗</span></a>
+            <a href="contact.html" class="hero-cta-link">Let's Talk <span>↗</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  INTRO TEXT SECTION                        -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="about-intro">
+      <div class="intro-grid">
+        <div class="intro-left">
+          <div class="intro-label reveal-up">Who I Am</div>
+        </div>
+        <div class="intro-right">
+          <p class="intro-large reveal-up">
+            Neil is a designer, animator, and visual storyteller who creates
+            <em>emotional digital experiences</em> — ones that resonate,
+            persist, and leave marks.
+          </p>
+          <p class="intro-body reveal-up" data-delay="0.1">
+            With over 7 years of crafting visual narratives across branding,
+            motion design, and digital interfaces, Neil operates at the
+            intersection of art and function — where strategy meets soul.
+          </p>
+          <p class="intro-body reveal-up" data-delay="0.2">
+            Every pixel is intentional. Every transition, earned. The work
+            doesn't just look good — it <em>feels</em> right. That's the
+            difference between design and artistry.
+          </p>
+          <div class="intro-stats reveal-up" data-delay="0.3">
+            <div class="stat-item">
+              <span class="stat-num">120+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">40+</span>
+              <span class="stat-label">Awards</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">07</span>
+              <span class="stat-label">Years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  FULLSCREEN IMAGE DIVIDER                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="img-divider">
+      <div class="img-divider-inner">
+        <img
+          src="https://images.pexels.com/photos/3137084/pexels-photo-3137084.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+          alt="Neil's work environment"
+          class="divider-img parallax-img"
+        />
+        <div class="divider-overlay">
+          <blockquote class="divider-quote reveal-up">
+            "Design is the silent ambassador<br/>of your brand."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  SKILLS SECTION                            -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="skills-section">
+      <div class="skills-grid">
+        <div class="skills-left">
+          <div class="sec-tag reveal-up">Expertise</div>
+          <h2 class="skills-title reveal-up">Mastery<br/><em>in motion.</em></h2>
+          <p class="skills-body reveal-up">
+            Every discipline refined through years of practice, obsession,
+            and an unyielding commitment to craft.
+          </p>
+        </div>
+        <div class="skills-right">
+          <div class="skill-bar-item reveal-up" data-delay="0.05">
+            <div class="skill-bar-header">
+              <span class="skill-name">Brand Identity Design</span>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" data-delay="0.1">
+            <div class="skill-bar-header">
+              <span class="skill-name">Motion Design & Animation</span>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="92"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" data-delay="0.15">
+            <div class="skill-bar-header">
+              <span class="skill-name">UI/UX Design</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="88"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" data-delay="0.2">
+            <div class="skill-bar-header">
+              <span class="skill-name">Visual Direction</span>
+              <span class="skill-pct">96%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="96"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" data-delay="0.25">
+            <div class="skill-bar-header">
+              <span class="skill-name">Typography & Editorial</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item reveal-up" data-delay="0.3">
+            <div class="skill-bar-header">
+              <span class="skill-name">3D & Spatial Design</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="78"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools Grid -->
+      <div class="tools-grid reveal-up">
+        <div class="tools-label">Tools & Software</div>
+        <div class="tools-list">
+          <div class="tool-tag">Figma</div>
+          <div class="tool-tag">After Effects</div>
+          <div class="tool-tag">Cinema 4D</div>
+          <div class="tool-tag">Blender</div>
+          <div class="tool-tag">Photoshop</div>
+          <div class="tool-tag">Illustrator</div>
+          <div class="tool-tag">Premiere Pro</div>
+          <div class="tool-tag">Spline</div>
+          <div class="tool-tag">Framer</div>
+          <div class="tool-tag">WebFlow</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--  TIMELINE / EXPERIENCE                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section class="timeline-section">
+      <div class="timeline-header">
+        <div class="sec-tag reveal-up">Experience</div>
+        <h2 class="timeline-title reveal-up">The journey<br/><em>so far.</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-up" data-delay="0.05">
+          <div class="t-year">2024–Now</div>
+          <div class="t-content">
+            <h3 class="t-role">Lead Visual Designer</h3>
+            <div class="t-company">Apex Creative Studio</div>
+            <p class="t-desc">Leading the visual identity and motion language for global clients across fashion, tech, and luxury sectors.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up" data-delay="0.1">
+          <div class="t-year">2022–2024</div>
+          <div class="t-content">
+            <h3 class="t-role">Senior Motion Designer</h3>
+            <div class="t-company">Monolith Agency</div>
+            <p class="t-desc">Created award-winning motion campaigns for Spotify, Nike, and emerging luxury brands. Led a team of 8 creatives.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up" data-delay="0.15">
+          <div class="t-year">2020–2022</div>
+          <div class="t-content">
+            <h3 class="t-role">UI/UX & Brand Designer</h3>
+            <div class="t-company">Vanta Digital</div>
+            <p class="t-desc">Designed complete digital product ecosystems from brand strategy to shipped interfaces. Served 25+ clients.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up" data-delay="0.2">
+          <div class="t-year">2018–2020</div>
+          <div class="t-content">
+            <h3 class="t-role">Visual Designer</h3>
+            <div class="t-company">Freelance / Studio Neil</div>
+            <p class="t-desc">Independent practice building brands, crafting motion identities, and producing editorial visual campaigns.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <div class="cta-tag reveal-up">Open for Collaboration</div>
+        <h2 class="cta-title reveal-up">
+          Let's build<br/><em>something legendary.</em>
+        </h2>
+        <a href="contact.html" class="cta-btn magnetic reveal-up">
+          <span>Get In Touch</span>
+          <span class="btn-circle">↗</span>
+        </a>
+      </div>
+      <div class="cta-bg-text" aria-hidden="true">NEIL</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">N<span class="dot">.</span></div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.behance.net/neilmusical" class="magnetic">Behance</a>
+        <a href="https://www.youtube.com/@Neil_armstrongxtudios" class="magnetic">Youtube</a>
+        <a href="https://www.instagram.com/neilhalyou/" class="magnetic">Instagram</a>
+        <a href="#" class="magnetic">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Neil. All rights reserved.</span>
+      <span>Designed with obsession.</span>
+    </div>
+  </footer>
+
+  <div class="page-transition" id="pageTransition">
+    <div class="pt-fill"></div>
+  </div>
+
+  <script src="js/cursor.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
